@@ -1,0 +1,76 @@
+
+/*abstracted selectors from original document*/
+body, select {
+  background-color:#333333;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+
+h2 {
+    margin: 0.25em;
+}
+
+p {
+    margin: 0.25em;
+}
+
+#divWrapper {
+    padding: 20px;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav select {
+    font-size: 1em;
+    margin: 0 1em;
+    padding: 0.25em;
+    border-radius: 4px;
+}
+
+main div ul {
+    list-style: none;
+    padding: 0;
+}
+/* end of original selectors*/
+.grid {
+  display:grid;
+}
+
+.grid .card {
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns:1fr;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .grid {
+    grid-template-columns:1fr 1fr;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns:1fr 1fr 1fr;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid {
+    grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .grid {
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  }
+
+}
